@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+}
+/* 여백 초기화 */
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+p,
+table,
+th,
+td,
+input,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li,
+ol,
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+em,
+address {
+  font-style: nomal;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+img,
+fieldset,
+button {
+  border: 0;
+}
+img,
+svg,
+video {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+img,
+fieldset,
+button {
+  border: 0;
+}
+/* 클리어픽스*/
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  line-height: 0;
+}
+.clearfix::after {
+  clear: both;
+}
+/* 블라인드 효과 */
+.blind {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+/* ir효과 */
+.ir {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -99999px;
+}

@@ -1,0 +1,211 @@
+.part_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  .part_title {
+    display: flex;
+    font-size: 3vw;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    color: white;
+    font-family: "Teko";
+  }
+
+  .line_purple {
+    width: 96%;
+    height: 0.1vw;
+    position: relative;
+    background-color: #d271fe;
+    margin-bottom: 1.5%;
+    z-index: 100;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.1vw;
+      height: 2.5vh;
+      top: 0;
+      left: 0;
+      background-color: #d271fe;
+    }
+
+    .line_text {
+      text-transform: uppercase;
+      font-family: "Aldrich";
+      color: #d271fe;
+      display: block;
+      margin: 0 0 0.5vw 0.3vw;
+      position: absolute;
+      top: -1.5rem;
+      left: 0;
+    }
+  }
+
+  .about_display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 1%;
+
+    .left_display {
+      width: 65%;
+
+      .left_title {
+        font-family: "Teko";
+        text-transform: uppercase;
+        font-size: 4vw;
+        letter-spacing: 1vw;
+        font-weight: bold;
+      }
+
+      .circle_skill {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3vw;
+        margin-right: 10%;
+        color: white;
+        font-family: "Antonio";
+
+        .circle {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 12vw;
+          height: 12vw;
+          border-radius: 50%;
+
+          &::before {
+            content: "";
+            position: absolute;
+            inset: 5px;
+            border-radius: 50%;
+            background-color: #363636;
+            opacity: 0.8;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 8vw;
+            height: 8vw;
+            background-color: #333;
+            border: 0.3rem solid rgba(210, 113, 254, 1);
+            border-radius: 50%;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25),
+              0 10px 10px rgba(0, 0, 0, 0.75),
+              0 -2px 2px rgba(255, 255, 255, 0.5),
+              inset 0 4px 2px rgba(0, 0, 0, 0.25),
+              inset 0 -2px 2px rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        .circle_number {
+          position: relative;
+          color: white;
+          z-index: 10;
+          line-height: 1em;
+          font-size: 2em;
+          font-weight: bold;
+
+          span {
+            font-size: 0.5em;
+            font-weight: 500;
+          }
+        }
+
+        .circle_title {
+          position: relative;
+          color: white;
+          z-index: 10;
+          font-weight: 500;
+          font-size: 1rem;
+          text-transform: uppercase;
+          line-height: 1.5em;
+        }
+      }
+    }
+
+    .framework_skil {
+      font-family: "Antonio";
+      color: white;
+      font-weight: bold;
+      font-size: 2vw;
+
+      .chart_line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 10%;
+
+        .skill_name {
+          width: 10%;
+          text-transform: uppercase;
+          letter-spacing: 0.5vw;
+        }
+
+        .chart_bar {
+          display: flex;
+          width: 35vw;
+          height: 1.5vw;
+          background-color: rgba(255, 255, 255, 0.5);
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            background-color: #d271fe;
+            width: var(--progress-width, 0%);
+            height: inherit;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: width 1s ease;
+          }
+        }
+
+        .percent {
+          letter-spacing: 0.5vw;
+
+          span {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+.right_display {
+  width: 30%;
+
+  .text_area {
+    margin-top: 2rem;
+    padding: 4%;
+    font-size: 0.85vw;
+    background-color: rgba(210, 113, 254, 0.3);
+    border: 3px solid rgb(211, 113, 254);
+    border-radius: 2%;
+    word-break: keep-all;
+    font-family: "GmarketSans";
+    font-weight: 300;
+
+    h3 {
+      padding-bottom: 1vw;
+      font-size: 1.2vw;
+    }
+  }
+}

@@ -1,0 +1,175 @@
+.modal_blue {
+  display: none;
+  position: absolute;
+  top: -15%;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 50vw;
+  height: 95vh;
+  border: 3px solid rgba(128, 0, 255, 1);
+  overflow-y: auto;
+  z-index: 10;
+
+  .top-line_blue {
+    width: 100%;
+    height: 7px;
+    background-color: rgba(128, 0, 255, 1);
+    margin-top: 5%;
+  }
+
+  .modal-top-area {
+    width: 100%;
+    height: 25%;
+    font-family: "Teko";
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 3%;
+
+    .modal-title {
+      display: inline-block;
+      font-size: 4vw;
+      font-weight: bold;
+      margin-left: 3%;
+    }
+
+    .bottom-line_blue {
+      width: 90%;
+      height: 7px;
+      background-color: rgba(128, 0, 255, 1);
+      margin: 8% 0 5% 3%;
+    }
+  }
+
+  .modal-middle-area,
+  .modal-bottom-area {
+    font-family: "Antonio";
+    color: white;
+    margin-top: 3%;
+  }
+
+  .modal-middle-title,
+  .modal-bottom-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2vw;
+    margin: 3% 0 1% 3%;
+  }
+
+  .bottom-line-top,
+  .middle-line_top {
+    width: 90%;
+    height: 2px;
+    background-color: rgba(128, 0, 255, 1);
+    margin: 0 0 3% 3%;
+  }
+
+  .ingredient-chart {
+    width: 93%;
+    font-family: "Antonio";
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+
+    .modal-chart_line {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5%;
+    }
+
+    .skill_name {
+      width: 25%;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-right: 5%;
+    }
+
+    .modal-chart_bar {
+      display: flex;
+      width: 20vw;
+      height: 1.5vw;
+      background-color: rgba(255, 255, 255, 0.5);
+      position: relative;
+      margin-right: 15%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: white;
+        width: var(--progress-width, 0%);
+        height: inherit;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: width 1s ease;
+      }
+    }
+
+    .percent-number {
+      letter-spacing: 0.1rem;
+    }
+  }
+
+  .middle-line_bottom,
+  .bottom-line_bottom {
+    width: 90%;
+    height: 2px;
+    background-color: rgba(128, 0, 255, 1);
+    margin: 3% 0 3% 3%;
+  }
+
+  .desc-text {
+    margin: 0 3%;
+    font-family: "GmarketSans";
+    font-weight: 300;
+    word-break: keep-all;
+  }
+
+  .stack-text {
+    margin: 0 3%;
+
+    strong {
+      font-family: "Antonio";
+      display: block;
+      margin-bottom: 0.5%;
+      letter-spacing: 0.08rem;
+    }
+
+    p {
+      display: block;
+      margin-bottom: 1%;
+      font-family: "GmarketSans";
+      font-weight: 300;
+    }
+  }
+
+  .close_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    height: 5vh;
+    margin-bottom: 3%;
+    background-color: rgba(128, 97, 255, 0.3);
+    border: 2px solid rgba(128, 97, 255, 1);
+    cursor: pointer;
+
+    span {
+      display: block;
+      font-weight: bold;
+      font-family: "Antonio";
+      text-transform: uppercase;
+      color: rgba(128, 97, 255, 1);
+      font-size: 1.5rem;
+      letter-spacing: 0.2rem;
+      margin: 1%;
+    }
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+}

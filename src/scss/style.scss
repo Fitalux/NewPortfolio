@@ -1,0 +1,13 @@
+// setting
+@import "setting/base";
+@import "setting/font";
+@import "setting/common";
+
+//section
+@import "section/main";
+@import "section/part_about";
+@import "section/part_script";
+@import "section/part_site.scss";
+
+//Page
+@import "page/modal.scss";
