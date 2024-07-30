@@ -1,6 +1,8 @@
-export default {
+import { defineConfig } from "vite";
+
+export default defineConfig({
   root: "src",
   build: {
-    outDir: "../public",
+    outDir: "../dist", // 빌드 결과물이 생성될 디렉토리
   },
-};
+});
