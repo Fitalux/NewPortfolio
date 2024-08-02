@@ -1,0 +1,111 @@
+.part_contact {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 3%;
+  z-index: 1;
+  position: relative;
+
+  .line_blue {
+    width: 95%;
+    height: 0.1vw;
+    position: relative;
+    background-color: #8000ff;
+    margin-right: 1%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0.1vw;
+      height: 2.5vh;
+      top: 0;
+      left: 0;
+      background-color: #8000ff;
+    }
+  }
+
+  .line_text {
+    text-transform: uppercase;
+    font-family: "Aldrich";
+    color: #8000ff;
+    display: block;
+    margin: 0 0 0.5vw 0.3vw;
+    position: absolute;
+    top: -2.5rem;
+    left: 0;
+    font-size: 2vw;
+  }
+
+  .contact_ment {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    strong {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "ExcludedItalic";
+      font-size: 4vw;
+      margin-top: 2%;
+      margin-bottom: 10%;
+    }
+
+    p {
+      font-family: "GmarketSans";
+      font-weight: 300;
+      font-size: 2vw;
+      padding-left: 1%;
+    }
+  }
+
+  .contact_bottom {
+    height: 20%;
+    margin: 10% 1%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: "Antonio";
+    position: relative;
+
+    .adrees {
+      font-size: 2rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      .number {
+        display: block;
+        font-weight: bold;
+        span {
+          margin-left: 1%;
+          font-size: 1.5rem;
+          font-weight: 100;
+        }
+      }
+      .mail {
+        display: block;
+        font-weight: bold;
+        span {
+          font-size: 1.5rem;
+          font-weight: 100;
+        }
+      }
+    }
+
+    .copy {
+      position: absolute;
+      bottom: 0;
+      right: 3%;
+    }
+  }
+
+  #particle-canvas {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
