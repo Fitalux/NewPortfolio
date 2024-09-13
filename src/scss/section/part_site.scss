@@ -187,22 +187,30 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 0.5vw;
 
             .work__cate {
-              margin-right: 4vw;
+              width: 50%;
+              text-align: left;
+              margin-right: 3.5vw;
+              font-size: 2vw;
             }
 
             .work__number_blue {
+              width: 50%;
               background-color: #8061ff;
+              margin-left: 3.5vw;
               padding-left: 0.5vw;
               padding-right: 0.5vw;
+              text-align: center;
             }
 
             .work__number_purple {
+              width: 50%;
               background-color: #d271fe;
+              margin-left: 3.5vw;
               padding-left: 0.5vw;
               padding-right: 0.5vw;
+              text-align: center;
             }
           }
 
